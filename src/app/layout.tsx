@@ -2,7 +2,11 @@ import type { Metadata } from 'next'
 import { Noto_Sans_JP } from 'next/font/google'
 import './globals.css'
 
-const notojp = Noto_Sans_JP({});
+const notojp = Noto_Sans_JP({
+  weight: ['400', '700'],
+  subsets: ['latin'],
+  variable: '--font-noto-sans-jp',
+});
 
 export const metadata: Metadata = {
   title: 'Financial UpDown Annotator',
