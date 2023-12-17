@@ -21,3 +21,10 @@ model usd_jpy_1min {
   up Boolean @default(false)
   down Boolean @default(false)
 }
+
+model usd_jpy_1min_annotation {
+  start_time DateTime
+  unixtime BigInt @id
+  is_annotated Boolean @default(false)
+  annotator String?
+}

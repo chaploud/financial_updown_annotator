@@ -38,3 +38,4 @@ next-env.d.ts
 # My
 data/
 .env
+.idea/*
